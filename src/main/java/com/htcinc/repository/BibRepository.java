@@ -8,10 +8,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
  */
 public interface BibRepository extends JpaRepository<Bib,Integer> {
 
-    Bib save(Bib bib);
-
-
-    void delete(Integer integer);
-
-
 }
