@@ -16,7 +16,7 @@ public class Item {
     @Column(name="items_content")
     private String content;
 
-    public void setId(int id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
