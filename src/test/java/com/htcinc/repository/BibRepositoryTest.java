@@ -5,7 +5,6 @@ import com.htcinc.entity.Bib;
 import com.htcinc.entity.Holdings;
 import com.htcinc.entity.Item;
 import org.junit.Test;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 
 import java.util.Arrays;
@@ -47,6 +46,7 @@ public class BibRepositoryTest extends TrainingApplicationTests {
         System.out.println(bib);
     }
 
+<<<<<<< HEAD
     @Test
     public void saveBibWithHoldingsAndItems() throws Exception {
         Bib bib = new Bib();
@@ -125,4 +125,57 @@ public class BibRepositoryTest extends TrainingApplicationTests {
     }
 
 
+=======
+
+    @Test
+    public void saveSingleBibHoldingItem() throws Exception {
+
+        Bib bib = new Bib();
+        assertNotNull(bib);
+        bib.setContent("sample bib");
+
+        Holdings holdings = new Holdings();
+        assertNotNull(holdings);
+        holdings.setContent("sample holding");
+
+        Item item = new Item();
+        assertNotNull(item);
+        item.setContent("sample item");
+
+        holdings.setItem(Arrays.asList(item));
+
+        bib.setHoldings(Arrays.asList(holdings));
+
+        assertNotNull(bibRepository);
+        Bib bib1 = bibRepository.save(bib);
+        assertNotNull(bib1);
+
+    }
+
+    @Test
+    public void saveSingleBibMultipleHoldingsItems() throws Exception {
+        Bib bib = new Bib();
+        assertNotNull(bib);
+        bib.setContent("bib content1");
+
+        Holdings holdings = new Holdings();
+        holdings.setContent("holding content1");
+
+        Holdings holdings1 = new Holdings();
+        holdings1.setContent("holding content2");
+
+        Item item = new Item();
+        item.setContent("item content1");
+
+        Item item1 = new Item();
+        item1.setContent("item content2");
+
+        holdings.setItem(Arrays.asList(item,item1));
+        bib.setHoldings(Arrays.asList(holdings,holdings1));
+
+        Bib bib1 = bibRepository.save(bib);
+        assertNotNull(bib1);
+
+    }
+>>>>>>> b50f285b6bbe8051cc3f670a14b90f751d4055db
 }
