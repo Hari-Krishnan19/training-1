@@ -8,7 +8,6 @@ import javax.xml.bind.annotation.XmlValue;
  */
 public class Subfields {
 
-
     private String code;
     private String desc;
 

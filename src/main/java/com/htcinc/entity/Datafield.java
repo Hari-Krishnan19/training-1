@@ -10,13 +10,8 @@ import java.util.List;
 public class Datafield {
 
     private int tag;
-
-
     private int ind1;
-
-
     private int ind2;
-
 
     private List<Subfields> subfield;
 

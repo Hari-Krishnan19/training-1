@@ -18,27 +18,27 @@ public class TrainingApplicationTests {
 
 	//	2.
 	@Test
-    public void checkIfCollectionPojoIsCreated(){}
+	public void checkIfCollectionPojoIsCreated(){}
 
 
 	//	3.
-    @Test
-    public void checkIfJAXBContextOjectIsCreated(){}
+	@Test
+	public void checkIfJAXBContextOjectIsCreated(){}
 
 
 	//	4.
-    @Test
-    public void checkIfUnmarshallerObjectIsCreated(){}
+	@Test
+	public void checkIfUnmarshallerObjectIsCreated(){}
 
 
 
 
 	//	5.
-    @Test
-    public void checkUnmarshallerCallMethod(){}
+	@Test
+	public void checkUnmarshallerCallMethod(){}
 
 
 	//	6.
-    @Test
-    public void  checkWhetherDataIsAccessible(){}
+	@Test
+	public void  checkWhetherDataIsAccessible(){}
 }

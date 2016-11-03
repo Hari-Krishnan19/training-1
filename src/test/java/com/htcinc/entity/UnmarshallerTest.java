@@ -45,7 +45,7 @@ public class UnmarshallerTest {
             }
         }
 
-         catch (JAXBException e) {
+        catch (JAXBException e) {
             e.printStackTrace();
         } catch (URISyntaxException e) {
             e.printStackTrace();
